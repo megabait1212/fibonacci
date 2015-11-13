@@ -33,9 +33,9 @@ var Fibonacci = (function () {
                 arr2.push(arr[i]);
             }
         }
-        console.log(arr2);
+        return arr2;
     };
     return Fibonacci;
 })();
 var fib = new Fibonacci();
-fib.inRange(20, 25);
+console.log(fib.inRange(20, 2500));
