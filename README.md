@@ -1,4 +1,4 @@
-link to Fibonacci number https://en.wikipedia.org/Fibonacci_number
+link to Fibonacci number https://en.wikipedia.org/wiki/Fibonacci_number
 
 How to use class:
 var fib = new Fibonacci();
