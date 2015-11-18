@@ -1,0 +1,19 @@
+{
+  "name": "fibonacci",
+  "version": "1.0.0",
+  "description": "link to Fibonacci number https://en.wikipedia.org/wiki/Fibonacci_number",
+  "main": "fibonacci.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megabait1212/fibonacci.git"
+  },
+  "author": "Vasily Ogar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megabait1212/fibonacci/issues"
+  },
+  "homepage": "https://github.com/megabait1212/fibonacci#readme"
+}
