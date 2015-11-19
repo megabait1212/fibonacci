@@ -1,16 +1,16 @@
 "use strict";
 class Fibonacci {
-    inRange(start:number, end:number) {
-        //if ((typeof start) !== 'number' || (typeof end) !== 'number') {
-        //    console.log ('Please enter number');
-        //    return;
-        //}
+    inRange(start, end) {
+        if ((typeof start) !== 'number' || (typeof end) !== 'number') {
+            console.log('Please enter number');
+            return;
+        }
         if (start < 1 || end <= 1) {
-            console.log ('Value should be more than 1');
+            console.log('Value should be more than 1');
             return;
         }
         if (end <= start) {
-            console.log ('First value should be less than last value');
+            console.log('First value should be less than last value');
             return;
         }
         var arr = [];
@@ -20,7 +20,7 @@ class Fibonacci {
             var current = fn2;
             fn2 = fn1;
             fn1 = fn1 + current;
-            if ((start <= fn2) && (fn2 <= end)) {
+            if (start <= fn2 && fn2 <= end) {
                 arr.push(fn2);
             }
         }
@@ -28,4 +28,4 @@ class Fibonacci {
     }
 }
 var fib = new Fibonacci();
-console.log(fib.inRange(2, 100));
+console.log(fib.inRange(10, 100));

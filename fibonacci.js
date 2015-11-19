@@ -3,10 +3,10 @@ var Fibonacci = (function () {
     function Fibonacci() {
     }
     Fibonacci.prototype.inRange = function (start, end) {
-        //if ((typeof start) !== 'number' || (typeof end) !== 'number') {
-        //    console.log ('Please enter number');
-        //    return;
-        //}
+        if ((typeof start) !== 'number' || (typeof end) !== 'number') {
+            console.log('Please enter number');
+            return;
+        }
         if (start < 1 || end <= 1) {
             console.log('Value should be more than 1');
             return;
@@ -22,7 +22,7 @@ var Fibonacci = (function () {
             var current = fn2;
             fn2 = fn1;
             fn1 = fn1 + current;
-            if ((start <= fn2) && (fn2 <= end)) {
+            if (start <= fn2 && fn2 <= end) {
                 arr.push(fn2);
             }
         }
@@ -31,5 +31,5 @@ var Fibonacci = (function () {
     return Fibonacci;
 })();
 var fib = new Fibonacci();
-console.log(fib.inRange(2, 100));
+console.log(fib.inRange(10, 100));
 //# sourceMappingURL=fibonacci.js.map
